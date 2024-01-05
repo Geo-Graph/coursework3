@@ -18,7 +18,7 @@ public class Client {
             Thread messageReceiverThread = new Thread(() -> {
                 try {
                     while (true) {
-                        // Получаем сообщение от сервера
+                        
                         Message message = (Message) inputStream.readObject();
                         System.out.println(message.getContent());
                     }
